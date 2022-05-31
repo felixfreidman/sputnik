@@ -1,0 +1,312 @@
+.container-bordering {
+    max-width: 1440px;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Play";
+}
+
+.main {
+    padding: 64px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    .main-header {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 140%;
+        color: #000050;
+        margin-bottom: 64px;
+    }
+
+    &--contacts {
+        width: 100%;
+
+        .circle1 {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .circle2 {
+            position: absolute;
+            right: 0;
+            top: 450px;
+        }
+
+        .decor1 {
+            position: absolute;
+            right: 0;
+            top: 200px;
+            object-fit: contain;
+        }
+
+        .support-section {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin-bottom: 130px;
+            max-width: 600px;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 868px;
+                height: 2px;
+                left: -40px;
+                bottom: -64px;
+                background: #EDEDED;
+                position: absolute;
+                display: block;
+            }
+
+            &__header {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 120%;
+                color: #000050;
+                margin-bottom: 20px;
+            }
+
+            &__par {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #6E6D7A;
+
+                &:last-child {
+                    margin-top: 22px;
+                }
+
+                &--bold {
+                    color: #000050;
+                    font-weight: 700;
+                }
+
+                &--link {
+                    color: #000050;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .questions-section {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 900px;
+            margin-bottom: 135px;
+            position: relative;
+
+            &::after {
+                content: "";
+                width: 868px;
+                height: 2px;
+                left: -40px;
+                bottom: -64px;
+                background: #EDEDED;
+                position: absolute;
+                display: block;
+            }
+
+            &__card {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-bottom: 64px;
+            }
+
+            &__header {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 120%;
+                color: #000050;
+                margin-bottom: 20px;
+            }
+
+            &__subheader {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #6E6D7A;
+                margin-top: -16px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            &__link {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 10px;
+                }
+
+                a {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 120%;
+                    color: #000050;
+                    text-decoration: none;
+                }
+
+                margin-bottom: 12px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .info-section {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+            &__header {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 140%;
+                color: #000050;
+                margin-bottom: 12px;
+            }
+
+            &__subheader {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: #000050;
+            }
+
+
+
+            &__text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #6E6D7A;
+                margin-bottom: 12px;
+                margin-top: 2px;
+            }
+
+            &__row {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+
+                .info-section__subheader {
+                    margin-bottom: 0;
+                    margin-right: 4px;
+                }
+
+                .info-section__text {
+                    margin-bottom: 0;
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .info-section__header+.info-section__subheader {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+
+    .container-bordering {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--publisher {
+        margin-left: 80px;
+
+        .skolk-div {
+            background-image: url(./assets/images/content/logoSkolk.svg);
+            width: 90px;
+            height: 64px;
+        }
+    }
+
+    &--button {
+        margin-right: 44px;
+    }
+
+    &--navigation {
+        display: flex;
+        align-items: center;
+
+        .navigation-link {
+            text-decoration: none;
+            margin-right: 20px;
+            transition: all 0.3s ease;
+        }
+
+        #tg-logo {
+            &:hover {
+                path {
+                    fill: #2AABEE;
+                    transition: all 0.3s ease;
+                }
+
+                .no-fill {
+                    fill: #fff;
+                }
+            }
+        }
+
+        #yt-logo {
+            &:hover {
+                path {
+                    fill: #ff0000;
+                    transition: all 0.3s ease;
+                }
+
+                .no-fill {
+                    fill: #fff;
+                }
+            }
+        }
+
+        #vk-logo {
+            &:hover {
+                path {
+                    fill: #0077FF;
+                    transition: all 0.3s ease;
+                }
+
+                .no-fill {
+                    fill: #fff;
+                }
+            }
+        }
+
+        #linkedin-logo {
+            &:hover {
+                path {
+                    fill: #0077b5;
+                    transition: all 0.3s ease;
+                }
+
+                .no-fill {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
