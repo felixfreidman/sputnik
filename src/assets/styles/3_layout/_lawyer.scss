@@ -1,0 +1,82 @@
+.main {
+    &--lawyer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        .absImg1 {
+            position: absolute;
+            top: -100px;
+            right: 0;
+        }
+
+        .absImg2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .main-header {
+            margin-bottom: 16px;
+        }
+
+        .main-caption {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #000050;
+            margin-bottom: 16px;
+            max-width: 681px;
+        }
+
+        .lawyer-section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 130px;
+            max-width: 680px;
+
+            &::after {
+                content: "";
+                width: 868px;
+                height: 2px;
+                left: -40px;
+                bottom: -64px;
+                background: #EDEDED;
+                position: absolute;
+                display: block;
+            }
+
+            &__text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 140%;
+                color: #6E6D7A;
+                margin-bottom: 16px;
+            }
+
+            .main-caption {
+                max-width: 620px;
+                margin-bottom: 24px;
+            }
+
+            &__link {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: #0EA7FF;
+            }
+        }
+
+        .partners-section {
+            display: flex;
+            align-items: center;
+
+            &__link {
+                margin-right: 58px;
+            }
+        }
+    }
+}
