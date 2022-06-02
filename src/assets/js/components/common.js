@@ -1,30 +1,72 @@
+const serviceSwiper = new Swiper('#serviceSwiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    speed: 400,
+    spaceBetween: 32,
+    effect: 'cards',
+    slidesPerView: '3',
+    // swipeHandler: '.swiper-wrapper',
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true
+    // },
 
-//   $('#btn-menu-mob').click(function(e) {
-//       e.preventDefault();
-//       $('.header__svg-mob').addClass('is-active');
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+const staffSwiper = new Swiper('#staffSwiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    speed: 400,
+    spaceBetween: 32,
+    effect: 'cards',
+    slidesPerView: '3',
+    // swipeHandler: '.swiper-wrapper',
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true
+    // },
 
-//       $('#menu-mobile').animate({ 
-//         right: '0px' 
-//         }, 300);
-//       $('#menu-mobile').animate({ 
-//         right: '0px' 
-//         }, 300);
-//     $('body').css('overflow', 'hidden');
-//     $('.page').animate({ 
-//         right: '190px' 
-//     }, 200); 
-// });
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next--staff',
+        prevEl: '.swiper-button-prev--staff',
+    },
+});
+const newsSwiper = new Swiper('#newsSwiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    speed: 400,
+    spaceBetween: 29,
+    effect: 'cards',
+    slidesPerView: 'auto',
+    // swipeHandler: '.swiper-wrapper',
+    // pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true
+    // },
 
-// $('.menu-mobile__svg-close').click(function(e) {
-//     e.preventDefault();
-//     $('.header__svg-mob').removeClass('is-active');
-//     $('#menu-mobile').animate({ 
-//       right: '-207px' 
-//   }, 300);
-//   $('body').css('overflow', 'auto');
-//   $('.page').animate({ 
-//       right: '0px' 
-//   }, 200); 
-// });
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next--news',
+        prevEl: '.swiper-button-prev--news',
+    },
+});
 
- 
+const faqBlocks = document.querySelectorAll('.faq-section__block');
+faqBlocks.forEach(block => {
+    block.addEventListener('click', () => {
+        if (!block.classList.contains('faq-section__block--active')) {
+            block.classList.add('faq-section__block--active')
+        } else {
+            block.classList.remove('faq-section__block--active')
+        }
+    })
+
+})

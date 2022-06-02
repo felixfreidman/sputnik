@@ -1,0 +1,229 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./style.min.css")
+        link(rel="shortcut icon", href="./assets/images/content/Logo.svg", type="image/x-icon")
+        title B2B Landing
+    body 
+        .main.main--b2b
+            .greeting-section 
+                .container-bordering 
+                    .greeting-section__header Развивайте бизнес вместе с нами
+                    .greeting-section__subheader Мы делаем народный домофон и видеокамеры с бесплатным мобильным приложением
+                    a(href="#").greeting-section__button Узнать подробнее
+            .container-bordering 
+                .service-section 
+                    .bussines-header 
+                        span.bussines-header--blue  С нашими сервисами 
+                        | получайте дополнительный доход и сокращайте издержки 
+                    .service-section__swiper 
+                        .swiper#serviceSwiper 
+                            .swiper-wrapper 
+                                .swiper-slide 
+                                    img(src="./assets/images/content/staff1.png", alt="").service-section__service-img
+                                    .service-section__service-name Спутник Онлайн
+                                    .service-section__par Бесплатный интернет для домофонной компании
+                                    .service-section__par Продвижение телеком компании в приложении жителя
+                                    .service-section__par Координация процессов от Спутника
+                                    .service-section__row 
+                                        .service-section__price бесплатно
+                                        a(href="#").service-section__more Подробнее
+                                .swiper-slide 
+                                    img(src="./assets/images/content/staff2.png", alt="").service-section__service-img
+                                    .service-section__service-name Асгард
+                                    .service-section__par Персональная настройка облака на вашем сервере
+                                    .service-section__par Разработка дополнительного функционала
+                                    .service-section__par Поддержка от Спутника
+                                    .service-section__row 
+                                        .service-section__price по запросу
+                                        a(href="#").service-section__more Подробнее
+                                .swiper-slide 
+                                    img(src="./assets/images/content/staff1.png", alt="").service-section__service-img
+                                    .service-section__service-name Спутник API
+                                    .service-section__par Развитие своего мобильного приложения
+                                    .service-section__par Доступ ко всей документации разработчиков
+                                    .service-section__par Реализация ваших продуктовых идей
+                                    .service-section__row 
+                                        .service-section__price от 80 ₽
+                                        a(href="#").service-section__more Подробнее
+                                .swiper-slide 
+                                    img(src="./assets/images/content/staff2.png", alt="").service-section__service-img
+                                    .service-section__service-name Спутник Контроль
+                                    .service-section__par Блокировка неплательщиков
+                                    .service-section__par Интеграция камер других производителей
+                                    .service-section__par Расширенный функционал ключей и многое другое
+                                    .service-section__row 
+                                        .service-section__price от 3000 ₽
+                                        a(href="#").service-section__more Подробнее
+                            .swiper-navigation 
+                                .swiper-button-next
+                                .swiper-button-prev
+
+                    .service-section__writeus 
+                        | Напишите в наш  
+                        img(src="./assets/images/content/tg-logo.svg", alt="")
+                        a(href="#").service-section__writeus--blue отдел продаж
+            .container-bordering 
+                .staff-section
+                    .bussines-header 
+                        span.bussines-header--blue  Всё оборудование
+                        |  в одном месте
+                    .staff-section__swiper
+                        .swiper#staffSwiper
+                            .swiper-wrapper 
+                                .swiper-slide 
+                                    img(src="./assets/images/content/service1.png", alt="").staff-section__staff-img
+                                    .staff-section__staff-name Домофон
+                                    .staff-section__table 
+                                        .staff-section__row 
+                                            .staff-section__column Корпус:
+                                            .staff-section__column Металлический
+                                        .staff-section__row 
+                                            .staff-section__column Камера:
+                                            .staff-section__column FullHD 3Mp
+                                        .staff-section__row 
+                                            .staff-section__column Ключи:
+                                            .staff-section__column NFC/Mifare
+                                    .staff-section__row 
+                                        .staff-section__price 
+                                            | от 8675 ₽
+                                            .staff-section__price--prev 10200 ₽
+                                        a(href="#").staff-section__more Подробнее
+                                .swiper-slide 
+                                    img(src="./assets/images/content/service2.png", alt="").staff-section__staff-img
+                                    .staff-section__staff-name Блок питания
+                                    .staff-section__table 
+                                        .staff-section__row 
+                                            .staff-section__column Напряжение
+                                            .staff-section__column Металлический
+                                        .staff-section__row 
+                                            .staff-section__column Камера:
+                                            .staff-section__column FullHD 3Mp
+                                        .staff-section__row 
+                                            .staff-section__column Ключи:
+                                            .staff-section__column NFC/Mifare
+                                    .staff-section__row 
+                                        .staff-section__price от 1250 ₽
+                                        a(href="#").staff-section__more Подробнее
+                                .swiper-slide 
+                                    img(src="./assets/images/content/service1.png", alt="").staff-section__staff-img
+                                    .staff-section__staff-name Домофон
+                                    .staff-section__table 
+                                        .staff-section__row 
+                                            .staff-section__column Корпус:
+                                            .staff-section__column Металлический
+                                        .staff-section__row 
+                                            .staff-section__column Камера:
+                                            .staff-section__column FullHD 3Mp
+                                        .staff-section__row 
+                                            .staff-section__column Ключи:
+                                            .staff-section__column NFC/Mifare
+                                    .staff-section__row 
+                                        .staff-section__price от 8675 ₽
+                                        a(href="#").staff-section__more Подробнее
+                                .swiper-slide 
+                                    img(src="./assets/images/content/service1.png", alt="").staff-section__staff-img
+                                    .staff-section__staff-name Домофон
+                                    .staff-section__table 
+                                        .staff-section__row 
+                                            .staff-section__column Корпус:
+                                            .staff-section__column Металлический
+                                        .staff-section__row 
+                                            .staff-section__column Камера:
+                                            .staff-section__column FullHD 3Mp
+                                        .staff-section__row 
+                                            .staff-section__column Ключи:
+                                            .staff-section__column NFC/Mifare
+                                    .staff-section__row 
+                                        .staff-section__price от 8675 ₽
+                                        a(href="#").staff-section__more Подробнее
+                            .swiper-navigation 
+                                .swiper-button-next.swiper-button-next--staff
+                                .swiper-button-next.swiper-button-prev--staff
+                    .staff-section__writeus 
+                        | Напишите в наш  
+                        img(src="./assets/images/content/tg-logo.svg", alt="")
+                        a(href="#").staff-section__writeus--blue отдел продаж       
+            .container-bordering 
+                .app-section 
+                    .app-section__describe
+                        .app-section__header Приложение жителя.
+                        .app-section__subheader Функциональное и удобное
+                        .app-section__row 
+                            a(href="#").app-section__download-button Попробовать демо
+                            a(href="#").app-section__more-button Узнать подробнее
+                    .app-section__img 
+                        img(src="./assets/images/content/bPhones.png", alt="")
+            .info-section 
+                img(src="./assets/images/content/decor5.svg", alt="").info-section__decor1 
+                img(src="./assets/images/content/decor6.svg", alt="").info-section__decor2 
+                img(src="./assets/images/content/decor7.svg", alt="").info-section__decor3 
+                .container-bordering 
+                    .info-section__card 
+                        .info-section__card-img 
+                            img(src="./assets/images/content/warrantyLogo.svg", alt="")
+                        .info-section__card-name Гарантийное обслуживание
+                        a(href="#").info-section__link Подробнее
+                    .info-section__card 
+                        .info-section__card-img 
+                            img(src="./assets/images/content/supportLogo.svg", alt="")
+                        .info-section__card-name Техническая поддержка
+                        a(href="#").info-section__link Подробнее
+                    .info-section__card 
+                        .info-section__card-img 
+                            img(src="./assets/images/content/marketLogo.svg", alt="")
+                        .info-section__card-name Маркетинговые материалы
+                        a(href="#").info-section__link Подробнее
+                    .info-section__card 
+                        .info-section__card-img 
+                            img(src="./assets/images/content/lawLogo.svg", alt="")
+                        .info-section__card-name Юридические материалы
+                        a(href="#").info-section__link Подробнее
+            .container-bordering 
+                .news-section 
+                    .bussines-header 
+                        span.bussines-header--blue  Спутник. 
+                        | Мы всегда рядом
+                    .news-section__swiper 
+                        .swiper#newsSwiper
+                            .swiper-wrapper 
+                                .swiper-slide.swiper-slide--small 
+                                    img(src="./assets/images/content/bSlide1.svg", alt="")
+                                .swiper-slide.swiper-slide--big 
+                                    img(src="./assets/images/content/bSlide2.svg", alt="")
+                                .swiper-slide.swiper-slide--small 
+                                    img(src="./assets/images/content/bSlide1.svg", alt="")
+                                .swiper-slide.swiper-slide--big 
+                                    img(src="./assets/images/content/bSlide2.svg", alt="")
+                            .swiper-navigation
+                                .swiper-button-next.swiper-button-next--news
+                                .swiper-button-next.swiper-button-prev--news
+            .container-bordering 
+                .faq-section
+                    .bussines-header 
+                        span.bussines-header--blue Ответы 
+                        |  на частые вопросы
+                    .faq-section__block 
+                        .faq-section__question 
+                            | Есть ли какие-то регулярные абонентские платежи при покупке вашего оборудования?
+                            img(src="./assets/images/content/arrowRight.svg", alt="")
+                        .faq-section__answer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    .faq-section__block 
+                        .faq-section__question 
+                            | Есть ли какие-то регулярные абонентские платежи при покупке вашего оборудования?
+                            img(src="./assets/images/content/arrowRight.svg", alt="")
+                        .faq-section__answer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    .faq-section__block 
+                        .faq-section__question 
+                            | Есть ли какие-то регулярные абонентские платежи при покупке вашего оборудования?
+                            img(src="./assets/images/content/arrowRight.svg", alt="")
+                        .faq-section__answer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                                
+
+        script(src="./assets/js/jquery.min.js") 
+        script(src="./assets/js/plugins.min.js") 
+        script(src="./assets/js/main.js") 
